@@ -52,7 +52,12 @@ CREATE TABLE products(
     category_id INT,
     FOREIGN KEY (category_id) REFERENCES categories(id)
 );
-
+CREATE TABLE product_images(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    product_id INT,
+    CONSTRAINT fk_product_images_product_id FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE,
+    image_url VARCHAR(255)
+);
 CREATE TABLE roles(
     id INT PRIMARY KEY,
     name VARCHAR(20) NOT NULL
