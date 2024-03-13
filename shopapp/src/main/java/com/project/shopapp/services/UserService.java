@@ -2,6 +2,7 @@ package com.project.shopapp.services;
 
 import com.project.shopapp.dtos.UserDTO;
 import com.project.shopapp.exceptions.DataNotFoundException;
+import com.project.shopapp.mappers.UserMapper;
 import com.project.shopapp.models.Role;
 import com.project.shopapp.models.User;
 import com.project.shopapp.repositories.RoleRepository;
@@ -15,19 +16,21 @@ import org.springframework.stereotype.Service;
 public class UserService implements IUserService{
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;
+    private final UserMapper userMapper;
     @Override
-    public User createUser(User user) throws DataNotFoundException {
-        String phoneNumber = user.getPhoneNumber();
+    public User createUser(UserDTO userDTO) throws DataNotFoundException {
+        String phoneNumber = userDTO.getPhoneNumber();
         if(userRepository.existsByPhoneNumber(phoneNumber)) {
             throw new DataIntegrityViolationException("Phone number already exists");
         }
-        Role role = roleRepository.findById(user.getRole().getId())
+        User newUser = userMapper.convertToEntity(userDTO, User.class);
+        Role role = roleRepository.findById(userDTO.getRoleId())
                 .orElseThrow(() -> new DataNotFoundException("Role not found"));
-        user.setRole(role);
-        if (user.getFacebookAccountId() == 0 && user.getGoogleAccountId() == 0) {
-            String password = user.getPassword();
+        newUser.setRole(role);
+        if (userDTO.getFacebookAccountId() == 0 && userDTO.getGoogleAccountId() == 0) {
+            String password = userDTO.getPassword();
         }
-        return userRepository.save(user);
+        return userRepository.save(newUser);
     }
 
     @Override

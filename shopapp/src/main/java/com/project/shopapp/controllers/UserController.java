@@ -18,7 +18,6 @@ import java.util.List;
 @RestController
 @RequestMapping("${api.prefix}/users")
 public class UserController {
-    private final UserMapper userMapper;
     private final UserService userService;
 
     @PostMapping("/register")
@@ -36,7 +35,7 @@ public class UserController {
             if(!userDTO.getPassword().equals(userDTO.getRetypepassword())){
                 return ResponseEntity.badRequest().body("Password does not match");
             }
-            userService.createUser(userMapper.convertToEntity(userDTO, User.class));
+            userService.createUser(userDTO);
             return ResponseEntity.ok("register");
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());

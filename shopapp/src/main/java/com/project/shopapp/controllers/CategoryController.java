@@ -19,7 +19,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CategoryController {
     private final CategoryService categoryService;
-    private final CategoryMapper categoryMapper;
     //show all categories
 
     @PostMapping("")
@@ -32,7 +31,7 @@ public class CategoryController {
                     .toList();
             return ResponseEntity.badRequest().body(errorMessages);
         }
-        categoryService.createCategory(categoryMapper.convertToEntity(categoryDTO, Category.class));
+        categoryService.createCategory(categoryDTO);
         return ResponseEntity.ok("insertCategory" + categoryDTO);
     }
 
@@ -48,7 +47,7 @@ public class CategoryController {
     @PutMapping("/{id}")
     public ResponseEntity<String> updateCategory(@PathVariable("id") Long id,
                                                 @RequestBody CategoryDTO categoryDTO){
-        categoryService.updateCategory(id, categoryMapper.convertToEntity(categoryDTO, Category.class));
+        categoryService.updateCategory(id, categoryDTO);
         return ResponseEntity.ok("updateCategory id =" + id);
     }
     @DeleteMapping("/{id}")

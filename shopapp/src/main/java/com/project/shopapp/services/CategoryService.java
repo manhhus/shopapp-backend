@@ -1,5 +1,7 @@
 package com.project.shopapp.services;
 
+import com.project.shopapp.dtos.CategoryDTO;
+import com.project.shopapp.mappers.CategoryMapper;
 import com.project.shopapp.models.Category;
 import com.project.shopapp.repositories.CategoryRepository;
 import lombok.RequiredArgsConstructor;
@@ -12,10 +14,10 @@ import java.util.List;
 public class CategoryService implements ICategoryService{
 
     private final CategoryRepository categoryRepository;
-
+    private final CategoryMapper categoryMapper;
     @Override
-    public Category createCategory(Category category) {
-        return categoryRepository.save(category);
+    public Category createCategory(CategoryDTO categoryDTO) {
+        return categoryRepository.save(categoryMapper.convertToEntity(categoryDTO, Category.class));
     }
 
     @Override
@@ -29,11 +31,8 @@ public class CategoryService implements ICategoryService{
     }
 
     @Override
-    public Category updateCategory(long categoryId, Category category) {
-        Category existingCategory = getCategoryById(categoryId);
-        existingCategory.setName(category.getName());
-        categoryRepository.save(existingCategory);
-        return existingCategory;
+    public Category updateCategory(long categoryId, CategoryDTO categoryDTO) {
+        return categoryRepository.save(categoryMapper.convertToEntity(categoryDTO, Category.class));
     }
 
     @Override

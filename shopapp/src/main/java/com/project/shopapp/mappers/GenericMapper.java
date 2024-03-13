@@ -19,4 +19,5 @@ public class GenericMapper<D, E> {
     public D convertToDTO(E entity, Class<D> dtoClass) {
         return mapper.map(entity, dtoClass);
     }
+
 }
