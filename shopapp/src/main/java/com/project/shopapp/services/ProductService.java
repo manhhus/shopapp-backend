@@ -24,13 +24,19 @@ import java.util.Optional;
 public class ProductService implements IProductService{
     private final ProductRepository productRepository;
     private final CategoryRepository categoryRepository;
-    private final ProductMapper productMapper;
     private final ProductImageRepository productImageRepository;
     @Override
     public Product createProduct(ProductDTO productDTO) throws DataNotFoundException {
-        categoryRepository.findById(productDTO.getCategoryId())
+        Category existingCategory = categoryRepository.findById(productDTO.getCategoryId())
                 .orElseThrow(() -> new DataNotFoundException("Cannot find category with it: " + productDTO.getCategoryId()));
-        return productRepository.save(productMapper.convertToEntity(productDTO, Product.class));
+        Product newProduct = Product.builder()
+                .name(productDTO.getName())
+                .price(productDTO.getPrice())
+                .thumbnail(productDTO.getThumbnail())
+                .category(existingCategory)
+                .build();
+        return productRepository.save(newProduct);
+
     }
 
     @Override

@@ -14,10 +14,14 @@ import java.util.List;
 public class CategoryService implements ICategoryService{
 
     private final CategoryRepository categoryRepository;
-    private final CategoryMapper categoryMapper;
     @Override
     public Category createCategory(CategoryDTO categoryDTO) {
-        return categoryRepository.save(categoryMapper.convertToEntity(categoryDTO, Category.class));
+        Category newCategory = Category
+                .builder()
+                .name(categoryDTO.getName())
+                .build();
+        return categoryRepository.save(newCategory);
+
     }
 
     @Override

@@ -4,7 +4,6 @@ import com.project.shopapp.components.JwtTokenUtil;
 import com.project.shopapp.dtos.UserDTO;
 import com.project.shopapp.exceptions.DataNotFoundException;
 import com.project.shopapp.exceptions.PermissionDenyException;
-import com.project.shopapp.mappers.UserMapper;
 import com.project.shopapp.models.Role;
 import com.project.shopapp.models.User;
 import com.project.shopapp.repositories.RoleRepository;
@@ -24,7 +23,6 @@ import java.util.Optional;
 public class UserService implements IUserService{
     private final UserRepository userRepository;
     private final RoleRepository roleRepository;
-    private final UserMapper userMapper;
     private final PasswordEncoder passwordEncoder;
     private final JwtTokenUtil jwtTokenUtil;
     private final AuthenticationManager authenticationManager;
@@ -40,7 +38,15 @@ public class UserService implements IUserService{
         if(role.getName().toUpperCase().equals(Role.ADMIN)) {
             throw new PermissionDenyException("You cannot register an admin account");
         }
-        User newUser = userMapper.convertToEntity(userDTO, User.class);
+        User newUser = User.builder()
+                .fullName(userDTO.getFullName())
+                .phoneNumber(userDTO.getPhoneNumber())
+                .password(userDTO.getPassword())
+                .address(userDTO.getAddress())
+                .dateOfBirth(userDTO.getDateOfBirth())
+                .facebookAccountId(userDTO.getFacebookAccountId())
+                .googleAccountId(userDTO.getGoogleAccountId())
+                .build();
         newUser.setRole(role);
         if (userDTO.getFacebookAccountId() == 0 && userDTO.getGoogleAccountId() == 0) {
             String password = userDTO.getPassword();
