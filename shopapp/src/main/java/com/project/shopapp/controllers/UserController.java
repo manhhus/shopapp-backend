@@ -35,8 +35,8 @@ public class UserController {
             if(!userDTO.getPassword().equals(userDTO.getRetypepassword())){
                 return ResponseEntity.badRequest().body("Password does not match");
             }
-            userService.createUser(userDTO);
-            return ResponseEntity.ok("register");
+            User user = userService.createUser(userDTO);
+            return ResponseEntity.ok(user);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
@@ -46,6 +46,11 @@ public class UserController {
     public ResponseEntity<String> login(
             @Valid @RequestBody UserLoginDTO userLoginDTO
             ) {
-        return ResponseEntity.ok("some token");
+        try {
+            String token = userService.login(userLoginDTO.getPhoneNumber(),userLoginDTO.getPassword());
+            return ResponseEntity.ok(token);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
 }

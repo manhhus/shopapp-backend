@@ -32,7 +32,10 @@ public class CategoryService implements ICategoryService{
 
     @Override
     public Category updateCategory(long categoryId, CategoryDTO categoryDTO) {
-        return categoryRepository.save(categoryMapper.convertToEntity(categoryDTO, Category.class));
+        Category existingCategory = getCategoryById(categoryId);
+        existingCategory.setName(categoryDTO.getName());
+        categoryRepository.save(existingCategory);
+        return existingCategory;
     }
 
     @Override
