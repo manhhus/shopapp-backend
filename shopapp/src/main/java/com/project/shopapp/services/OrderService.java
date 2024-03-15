@@ -13,6 +13,7 @@ import org.aspectj.weaver.ast.Or;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -59,6 +60,7 @@ public class OrderService implements IOrderService{
     }
 
     @Override
+    @Transactional
     public Order updateOrder(Long id, OrderDTO orderDTO)
             throws DataNotFoundException {
         Order order = orderRepository.findById(id).orElseThrow(() ->
@@ -74,6 +76,7 @@ public class OrderService implements IOrderService{
     }
 
     @Override
+    @Transactional
     public void deleteOrder(Long id) {
         Order order = orderRepository.findById(id).orElse(null);
         //no hard-delete, => please soft-delete
