@@ -1,8 +1,10 @@
 package com.project.shopapp.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.project.shopapp.services.ProductService;
 import jakarta.persistence.*;
 import lombok.*;
-
+import java.util.List;
 @Entity
 @Table(name = "products")
 @Getter
@@ -26,6 +28,9 @@ public class Product extends BaseEntity{
     @Column(name = "description")
     private String description;
 
+    @OneToMany(mappedBy = "product")
+    @JsonIgnore
+    private List<ProductImage> productImages;
 
     @ManyToOne
     @JoinColumn(name = "category_id")
