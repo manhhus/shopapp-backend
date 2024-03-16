@@ -28,6 +28,7 @@ public class Product extends BaseEntity{
     @Column(name = "description")
     private String description;
 
+    // map by entity
     @OneToMany(mappedBy = "product")
     @JsonIgnore
     private List<ProductImage> productImages;
