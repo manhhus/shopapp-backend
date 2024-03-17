@@ -95,8 +95,12 @@ public class ProductService implements IProductService{
         }
         return productImageRepository.save(newProductImage);
     }
-
+    @Override
     public List<ProductImage> getProductImages(Long productId) {
         return productImageRepository.findByProductId(productId);
+    }
+
+    public List<Product> findProductsbyIds(List<Long> productIds) {
+        return productRepository.findProductsByIds(productIds);
     }
 }

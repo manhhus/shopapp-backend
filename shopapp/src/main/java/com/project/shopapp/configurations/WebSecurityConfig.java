@@ -54,6 +54,8 @@ public class WebSecurityConfig {
                             .requestMatchers(GET,
                                     String.format("%s/products/**", apiPrefix)).permitAll()
                             .requestMatchers(GET,
+                                    String.format("%s/products/by-ids**", apiPrefix)).permitAll()
+                            .requestMatchers(GET,
                                     String.format("%s/products/images/**", apiPrefix)).permitAll()
                             .requestMatchers(POST,
                                     String.format("%s/products/**", apiPrefix)).hasAnyRole(Role.ADMIN)
@@ -63,7 +65,6 @@ public class WebSecurityConfig {
 
                             .requestMatchers(DELETE,
                                     String.format("%s/products/**", apiPrefix)).hasAnyRole(Role.ADMIN)
-
 
                             .requestMatchers(POST,
                                     String.format("%s/orders/**", apiPrefix)).permitAll()
@@ -98,7 +99,7 @@ public class WebSecurityConfig {
             public void customize(CorsConfigurer<HttpSecurity> httpSecurityCorsConfigurer) {
                 CorsConfiguration configuration = new CorsConfiguration();
                 configuration.setAllowedOrigins(List.of("*"));
-                configuration.setAllowedMethods(Arrays.asList("GET","POST","PUT","PATH","DELETE","OPTIONS"));
+                configuration.setAllowedMethods(Arrays.asList("GET","POST","PUT","PATCH","DELETE","OPTIONS"));
                 configuration.setAllowedHeaders(Arrays.asList("authorization","Content-Type","x-auto-token"));
                 configuration.setExposedHeaders(List.of("x-auth-token"));
                 UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
