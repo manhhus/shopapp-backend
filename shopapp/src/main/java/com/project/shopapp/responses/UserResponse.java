@@ -2,7 +2,6 @@ package com.project.shopapp.responses;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.project.shopapp.models.User;
-import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 import java.util.Date;

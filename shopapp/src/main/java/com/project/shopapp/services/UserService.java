@@ -1,6 +1,7 @@
 package com.project.shopapp.services;
 
 import com.project.shopapp.components.JwtTokenUtil;
+import com.project.shopapp.dtos.UpdateUserDTO;
 import com.project.shopapp.dtos.UserDTO;
 import com.project.shopapp.exceptions.DataNotFoundException;
 import com.project.shopapp.exceptions.PermissionDenyException;
@@ -48,8 +49,9 @@ public class UserService implements IUserService{
                 .dateOfBirth(userDTO.getDateOfBirth())
                 .facebookAccountId(userDTO.getFacebookAccountId())
                 .googleAccountId(userDTO.getGoogleAccountId())
+                .role(role)
                 .build();
-        newUser.setRole(role);
+//        newUser.setRole(role);
         if (userDTO.getFacebookAccountId() == 0 && userDTO.getGoogleAccountId() == 0) {
             String password = userDTO.getPassword();
             String encodedPassword = passwordEncoder.encode(password);
@@ -87,5 +89,45 @@ public class UserService implements IUserService{
         } else {
             throw new Exception("User not found");
         }
+    }
+
+    @Override
+    @Transactional
+    public User updateUser(Long userId, UpdateUserDTO userDTO) throws Exception {
+        User existingUser = userRepository.findById(userId)
+                .orElseThrow(() -> new DataNotFoundException("User not found"));
+
+        if (!existingUser.getPhoneNumber().equals(userDTO.getPhoneNumber()) &&
+                userRepository.existsByPhoneNumber(userDTO.getPhoneNumber())) {
+            throw new DataIntegrityViolationException("Phone number already exists");
+        }
+
+        if (userDTO.getFullName() != null) {
+            existingUser.setFullName(userDTO.getFullName());
+        }
+        if (userDTO.getPhoneNumber() != null) {
+            existingUser.setPhoneNumber(userDTO.getPhoneNumber());
+        }
+        if (userDTO.getAddress() != null) {
+            existingUser.setAddress(userDTO.getAddress());
+        }
+        if (userDTO.getDateOfBirth() != null) {
+            existingUser.setDateOfBirth(userDTO.getDateOfBirth());
+        }
+        if (userDTO.getFacebookAccountId() > 0) {
+            existingUser.setFacebookAccountId(userDTO.getFacebookAccountId());
+        }
+        if (userDTO.getGoogleAccountId() > 0) {
+            existingUser.setGoogleAccountId(userDTO.getGoogleAccountId());
+        }
+
+        if (userDTO.getFacebookAccountId() == 0 && userDTO.getGoogleAccountId() == 0
+            && userDTO.getPassword() != null && !userDTO.getPassword().isEmpty()) {
+            String password = userDTO.getPassword();
+            String encodedPassword = passwordEncoder.encode(password);
+            existingUser.setPassword(encodedPassword);
+        }
+
+        return userRepository.save(existingUser);
     }
 }
