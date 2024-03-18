@@ -4,6 +4,7 @@ import com.project.shopapp.dtos.UserDTO;
 import com.project.shopapp.dtos.UserLoginDTO;
 import com.project.shopapp.mappers.UserMapper;
 import com.project.shopapp.models.User;
+import com.project.shopapp.responses.UserResponse;
 import com.project.shopapp.services.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -42,6 +43,7 @@ public class UserController {
         }
     }
 
+
     @PostMapping("/login")
     public ResponseEntity<String> login(
             @Valid @RequestBody UserLoginDTO userLoginDTO
@@ -51,6 +53,17 @@ public class UserController {
             return ResponseEntity.ok(token);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @PostMapping("/details")
+    public ResponseEntity<UserResponse> getUserDetails(@RequestHeader("Authorization") String token){
+        try {
+            String extractToken = token.substring(7);
+            User user = userService.getUserDetailsFromToken(extractToken);
+            return ResponseEntity.ok(UserResponse.fromUser(user));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().build();
         }
     }
 }

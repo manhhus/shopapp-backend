@@ -1,6 +1,7 @@
 package com.project.shopapp.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.project.shopapp.services.ProductService;
 import jakarta.persistence.*;
 import lombok.*;
@@ -28,9 +29,8 @@ public class Product extends BaseEntity{
     @Column(name = "description")
     private String description;
 
-    // map by entity
-    @OneToMany(mappedBy = "product")
-    @JsonIgnore
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonManagedReference
     private List<ProductImage> productImages;
 
     @ManyToOne

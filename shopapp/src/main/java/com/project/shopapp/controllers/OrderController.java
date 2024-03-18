@@ -3,6 +3,7 @@ package com.project.shopapp.controllers;
 
 import com.project.shopapp.dtos.OrderDTO;
 import com.project.shopapp.models.Order;
+import com.project.shopapp.responses.OrderResponse;
 import com.project.shopapp.services.OrderService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -11,6 +12,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -42,7 +44,11 @@ public class OrderController {
     public ResponseEntity<?> getOrders(@Valid @PathVariable("user_id") Long userId) {
         try {
             List<Order> orderList = orderService.findByUserId(userId);
-            return ResponseEntity.ok(orderList);
+            List<OrderResponse> orderResponses = new ArrayList<>();
+            for (Order order : orderList){
+                orderResponses.add(OrderResponse.fromOrder(order));
+            }
+            return ResponseEntity.ok(orderResponses);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
@@ -52,7 +58,7 @@ public class OrderController {
     public ResponseEntity<?> getOrder(@Valid @PathVariable("id") Long orderId) {
         try {
             Order order = orderService.getOrder(orderId);
-            return ResponseEntity.ok(order);
+            return ResponseEntity.ok(OrderResponse.fromOrder(order));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
