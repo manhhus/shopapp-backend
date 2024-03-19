@@ -102,16 +102,16 @@ public class UserService implements IUserService{
             throw new DataIntegrityViolationException("Phone number already exists");
         }
 
-        if (userDTO.getFullName() != null) {
+        if (userDTO.getFullName() != null && !userDTO.getFullName().isEmpty()) {
             existingUser.setFullName(userDTO.getFullName());
         }
-        if (userDTO.getPhoneNumber() != null) {
+        if (userDTO.getPhoneNumber() != null ) {
             existingUser.setPhoneNumber(userDTO.getPhoneNumber());
         }
-        if (userDTO.getAddress() != null) {
+        if (userDTO.getAddress() != null && !userDTO.getAddress().isEmpty()) {
             existingUser.setAddress(userDTO.getAddress());
         }
-        if (userDTO.getDateOfBirth() != null) {
+        if (userDTO.getDateOfBirth() != null && !userDTO.getDateOfBirth().toString().isEmpty()) {
             existingUser.setDateOfBirth(userDTO.getDateOfBirth());
         }
         if (userDTO.getFacebookAccountId() > 0) {
