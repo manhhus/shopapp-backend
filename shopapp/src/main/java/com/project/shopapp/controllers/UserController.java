@@ -69,7 +69,7 @@ public class UserController {
     }
 
     @PutMapping("/details/{userId}")
-    public ResponseEntity<?> updateUser(
+    public ResponseEntity<UserResponse> updateUser(
             @PathVariable Long userId,
             @RequestBody UpdateUserDTO userDTO,
             @RequestHeader("Authorization") String authorizationHeader

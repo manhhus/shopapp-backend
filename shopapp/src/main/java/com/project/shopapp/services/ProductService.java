@@ -1,5 +1,6 @@
 package com.project.shopapp.services;
 
+import com.github.javafaker.Faker;
 import com.project.shopapp.dtos.ProductDTO;
 import com.project.shopapp.dtos.ProductImageDTO;
 import com.project.shopapp.exceptions.DataNotFoundException;
@@ -16,6 +17,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -41,8 +44,39 @@ public class ProductService implements IProductService{
     }
 
     @Override
+    @Transactional
+    public List<Product> createProducts() {
+        Faker faker = new Faker();
+        List<Product> productList = new ArrayList<>();
+        for (int i = 0; i < 2_000_000; i++) {
+//            String productName = faker.commerce().productName();
+//            if (productService.existsByName(productName)) {
+//                continue;
+//            }
+            productList.add(Product.builder()
+                    .name(faker.commerce().productName())
+                    .price((float) faker.number().numberBetween(10, 90_000))
+                    .description(faker.lorem().sentence())
+                    .thumbnail("366f1993-fb03-4a2f-b939-a9c2cd62ec6f_021.jpg")
+                    .category(categoryRepository.findById((long) faker.number().numberBetween(1, 5)).get())
+                    .build()
+            );
+        }
+//        Category existingCategory = categoryRepository.findById(productDTO.getCategoryId())
+//                .orElseThrow(() -> new DataNotFoundException("Cannot find category with it: " + productDTO.getCategoryId()));
+//        Product newProduct = Product.builder()
+//                .name(productDTO.getName())
+//                .price(productDTO.getPrice())
+//                .thumbnail(productDTO.getThumbnail())
+//                .category(existingCategory)
+//                .build();
+        return productRepository.saveAll(productList);
+
+    }
+
+    @Override
     public Product getProductById(long id) throws Exception {
-        return productRepository.findById(id)
+        return productRepository.getDetaiProduct(id)
                 .orElseThrow(() -> new DataNotFoundException("Cannot find product with it: " + id));
     }
 

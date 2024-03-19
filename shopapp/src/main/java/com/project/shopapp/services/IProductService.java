@@ -22,4 +22,6 @@ public interface IProductService {
             Long productId,
             ProductImageDTO productImageDTO) throws Exception;
     List<ProductImage> getProductImages(Long productId);
+    List<Product> createProducts();
+
 }

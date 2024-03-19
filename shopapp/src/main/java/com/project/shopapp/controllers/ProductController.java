@@ -179,26 +179,27 @@ public class ProductController {
         }
     }
 
-//    @PostMapping("/generateFakeProducts")
+    @PostMapping("/generateFakeProducts")
     public ResponseEntity<String> generateFakeProducts() {
-        Faker faker = new Faker();
-        for (int i = 0; i < 1000; i++) {
-            String productName = faker.commerce().productName();
-            if (productService.existsByName(productName)) {
-                continue;
-            }
-            ProductDTO productDTO = ProductDTO.builder()
-                    .name(productName)
-                    .price((float) faker.number().numberBetween(10, 90_000))
-                    .description(faker.lorem().sentence())
-                    .categoryId((long) faker.number().numberBetween(1, 5))
-                    .build();
+//        Faker faker = new Faker();
+//        for (int i = 0; i < 2_000_000; i++) {
+//            String productName = faker.commerce().productName();
+//            if (productService.existsByName(productName)) {
+//                continue;
+//            }
+//            ProductDTO productDTO = ProductDTO.builder()
+//                    .name(productName)
+//                    .price((float) faker.number().numberBetween(10, 90_000))
+//                    .description(faker.lorem().sentence())
+//                    .thumbnail("366f1993-fb03-4a2f-b939-a9c2cd62ec6f_021.jpg")
+//                    .categoryId((long) faker.number().numberBetween(1, 5))
+//                    .build();
             try {
-                productService.createProduct(productDTO);
+                productService.createProducts();
             } catch (Exception e) {
                 return ResponseEntity.badRequest().body(e.getMessage());
             }
-        }
+//        }
         return ResponseEntity.ok("Fake products created");
     }
 
