@@ -4,9 +4,11 @@ package com.project.shopapp.controllers;
 import com.project.shopapp.dtos.OrderDTO;
 import com.project.shopapp.models.Order;
 import com.project.shopapp.responses.OrderResponse;
-import com.project.shopapp.services.OrderService;
+import com.project.shopapp.services.IOrderService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
@@ -20,7 +22,8 @@ import java.util.List;
 @RequestMapping("${api.prefix}/orders")
 @RequiredArgsConstructor
 public class OrderController {
-    private final OrderService orderService;
+    private final IOrderService orderService;
+    private static final Logger logger = LoggerFactory.getLogger(OrderController.class);
     @PostMapping("")
     public ResponseEntity<?> createOrder(
             @Valid @RequestBody OrderDTO orderDTO,
@@ -34,6 +37,7 @@ public class OrderController {
                 return ResponseEntity.badRequest().body(errorMessages);
             }
             Order order = orderService.createOrder(orderDTO);
+            logger.info("New order created: {}", order);
             return ResponseEntity.ok(order);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
@@ -69,6 +73,7 @@ public class OrderController {
                                          @Valid @RequestBody OrderDTO orderDTO) {
         try {
             Order newOrder = orderService.updateOrder(id, orderDTO);
+            logger.info("Order {}, updated: {}", id, orderDTO);
             return ResponseEntity.ok(newOrder);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
@@ -79,6 +84,7 @@ public class OrderController {
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteOrder(@Valid @PathVariable("id") Long id) {
         orderService.deleteOrder(id);
+        logger.info("order delete: {}", id);
         return ResponseEntity.ok("delete order" + id);
     }
 }

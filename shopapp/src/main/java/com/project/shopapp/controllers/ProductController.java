@@ -7,13 +7,13 @@ import com.project.shopapp.models.Product;
 import com.project.shopapp.models.ProductImage;
 import com.project.shopapp.responses.ProductListResponse;
 import com.project.shopapp.responses.ProductResponse;
+import com.project.shopapp.services.IProductService;
 import com.project.shopapp.services.ProductService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.io.UrlResource;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -35,8 +35,8 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("${api.prefix}/products")
 public class ProductController {
-    private final ProductService productService;
-
+    private final IProductService productService;
+    private static final Logger logger = LoggerFactory.getLogger(ProductController.class);
     @PostMapping(value = "")
     public  ResponseEntity<?> createProduct(
         @Valid @RequestBody ProductDTO productDTO,
@@ -129,9 +129,9 @@ public class ProductController {
     @GetMapping("/total-page")
     public ResponseEntity<Integer> getTotalPageSearch(
             @RequestParam(defaultValue = "") String keyword,
-             @RequestParam(defaultValue = "0", name = "category_id") Long categoryId,
-              @RequestParam(defaultValue = "0") int page,
-               @RequestParam(defaultValue = "9") int limit) {
+            @RequestParam(defaultValue = "0", name = "category_id") Long categoryId,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "9") int limit) {
         int totalPage;
         if(keyword.isEmpty() && categoryId == 0)
         {
@@ -151,6 +151,8 @@ public class ProductController {
             @RequestParam(defaultValue = "9") int limit) {
 //        PageRequest pageRequest = PageRequest.of(page, limit,
 //                Sort.by("id").ascending());
+        logger.info(String.format("keyword = %s, category_id = %d, page = %d, limit = %d",
+                keyword, categoryId, page, limit));
         List<ProductResponse> productPage = productService.getAllProducts(keyword,categoryId,limit,page);
 //        int totalPages = productService.getTotalPages(limit);
 //        List<ProductResponse> products = productPage.getContent();
@@ -160,7 +162,6 @@ public class ProductController {
 //                .totalPages(totalPages)
                 .build());
     }
-
 
 
     @GetMapping("/{id}")
@@ -181,6 +182,7 @@ public class ProductController {
                     .map(Long::parseLong)
                     .collect(Collectors.toList());
             List<Product> products = productService.findProductsbyIds(productIds);
+            logger.info("Products get by: {}", ids);
             return ResponseEntity.ok(products);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
@@ -191,6 +193,7 @@ public class ProductController {
     public ResponseEntity<String> deleteProduct(@PathVariable("id") Long id){
         try {
             productService.deleteProduct(id);
+            logger.info("Product deleted: {}", id);
             return ResponseEntity.ok("Detele Product with id:" + id);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
@@ -228,6 +231,7 @@ public class ProductController {
     ) {
         try {
             Product updateProduct = productService.updateProduct(id, productDTO);
+            logger.info("Product {} updated: {}", id, productDTO);
             return ResponseEntity.ok(ProductResponse.fromProduct(updateProduct));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());

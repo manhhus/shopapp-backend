@@ -150,6 +150,7 @@ public class ProductService implements IProductService{
         return productImageRepository.findByProductId(productId);
     }
 
+    @Override
     public List<Product> findProductsbyIds(List<Long> productIds) {
         return productRepository.findProductsByIds(productIds);
     }

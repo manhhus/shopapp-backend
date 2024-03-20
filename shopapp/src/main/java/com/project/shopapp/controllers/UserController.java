@@ -5,9 +5,11 @@ import com.project.shopapp.dtos.UserDTO;
 import com.project.shopapp.dtos.UserLoginDTO;
 import com.project.shopapp.models.User;
 import com.project.shopapp.responses.UserResponse;
-import com.project.shopapp.services.UserService;
+import com.project.shopapp.services.IUserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -20,8 +22,8 @@ import java.util.List;
 @RestController
 @RequestMapping("${api.prefix}/users")
 public class UserController {
-    private final UserService userService;
-
+    private final IUserService userService;
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
     @PostMapping("/register")
     public ResponseEntity<?> createUser(
             @Valid @RequestBody UserDTO userDTO,
@@ -38,6 +40,7 @@ public class UserController {
                 return ResponseEntity.badRequest().body("Password does not match");
             }
             User user = userService.createUser(userDTO);
+            logger.info("New user created: {}", userDTO);
             return ResponseEntity.ok(user);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
@@ -51,6 +54,7 @@ public class UserController {
             ) {
         try {
             String token = userService.login(userLoginDTO.getPhoneNumber(),userLoginDTO.getPassword());
+            logger.info("User login: {}", userLoginDTO);
             return ResponseEntity.ok(token);
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
@@ -81,6 +85,7 @@ public class UserController {
                 return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
             }
             User updateUser = userService.updateUser(userId, userDTO);
+            logger.info("Update user: {} {}" ,userId, userDTO);
             return ResponseEntity.ok(UserResponse.fromUser(updateUser));
         } catch (Exception e) {
             return ResponseEntity.badRequest().build();

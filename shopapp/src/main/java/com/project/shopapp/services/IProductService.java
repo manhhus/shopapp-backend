@@ -29,5 +29,6 @@ public interface IProductService {
                             Long categoryId,
                             int limit
                            );
+    List<Product> findProductsbyIds(List<Long> productIds);
 
 }
