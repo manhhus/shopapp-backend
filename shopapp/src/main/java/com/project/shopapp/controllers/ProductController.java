@@ -126,20 +126,38 @@ public class ProductController {
         return uniqueFileName;
     }
 
+    @GetMapping("/total-page")
+    public ResponseEntity<Integer> getTotalPageSearch(
+            @RequestParam(defaultValue = "") String keyword,
+             @RequestParam(defaultValue = "0", name = "category_id") Long categoryId,
+              @RequestParam(defaultValue = "0") int page,
+               @RequestParam(defaultValue = "9") int limit) {
+        int totalPage;
+        if(keyword.isEmpty() && categoryId == 0)
+        {
+            totalPage = productService.getTotalPages(limit);
+        } else  {
+            totalPage = productService.totalPageSearch(keyword, categoryId, limit);
+        }
+
+        return ResponseEntity.ok(totalPage) ;
+    }
+
     @GetMapping("")
     public ResponseEntity<ProductListResponse> getAllProducts(
             @RequestParam(defaultValue = "") String keyword,
             @RequestParam(defaultValue = "0", name = "category_id") Long categoryId,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "9") int limit) {
-        PageRequest pageRequest = PageRequest.of(page, limit,
-                Sort.by("id").ascending());
-        Page<ProductResponse> productPage = productService.getAllProducts(keyword,categoryId,pageRequest);
-        int totalPages = productPage.getTotalPages();
-        List<ProductResponse> products = productPage.getContent();
+//        PageRequest pageRequest = PageRequest.of(page, limit,
+//                Sort.by("id").ascending());
+        List<ProductResponse> productPage = productService.getAllProducts(keyword,categoryId,limit,page);
+//        int totalPages = productService.getTotalPages(limit);
+//        List<ProductResponse> products = productPage.getContent();
+
         return ResponseEntity.ok(ProductListResponse.builder()
-                .products(products)
-                .totalPages(totalPages)
+                .products(productPage)
+//                .totalPages(totalPages)
                 .build());
     }
 

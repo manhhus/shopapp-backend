@@ -8,13 +8,14 @@ import com.project.shopapp.models.ProductImage;
 import com.project.shopapp.responses.ProductResponse;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
 public interface IProductService {
     Product createProduct(ProductDTO product) throws DataNotFoundException;
     Product getProductById(long id) throws Exception;
-    Page<ProductResponse> getAllProducts(String keyword, Long categoryId,PageRequest pageRequest);
+    List<ProductResponse> getAllProducts(String keyword, Long categoryId, int limit, int page);
     Product updateProduct(long id, ProductDTO product) throws Exception;
     void deleteProduct(long id);
     boolean existsByName(String name);
@@ -23,5 +24,10 @@ public interface IProductService {
             ProductImageDTO productImageDTO) throws Exception;
     List<ProductImage> getProductImages(Long productId);
     List<Product> createProducts();
+    int getTotalPages(int limit);
+    int totalPageSearch( String keyword,
+                            Long categoryId,
+                            int limit
+                           );
 
 }

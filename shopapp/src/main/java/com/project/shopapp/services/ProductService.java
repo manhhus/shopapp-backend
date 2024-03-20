@@ -15,6 +15,7 @@ import com.project.shopapp.responses.ProductResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -81,10 +82,25 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public Page<ProductResponse> getAllProducts(String keyword, Long categoryId, PageRequest pageRequest) {
-        Page<Product> productPage = productRepository.searchProducts(keyword, categoryId, pageRequest);
-        return productPage.map(ProductResponse::fromProduct);
+    public List<ProductResponse> getAllProducts(String keyword, Long categoryId, int limit, int page) {
+        List<ProductResponse> productResponseList = new ArrayList<>();
+        List<Product> productPage = productRepository.searchProducts(keyword, categoryId, limit,page);
+        for (Product productResponse: productPage) {
+            productResponseList.add(ProductResponse.fromProduct(productResponse));
+        }
+        return productResponseList;
 
+    }
+    @Override
+    public int getTotalPages(int limit) {
+        return productRepository.getTotalPage(limit);
+    }
+    @Override
+    public int totalPageSearch(String keyword,
+                           Long categoryId,
+                           int limit
+                            ){
+        return productRepository.getTotalPageSearch(keyword, categoryId, limit);
     }
 
     @Override
