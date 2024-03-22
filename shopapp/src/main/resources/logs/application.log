@@ -342,3 +342,1032 @@
 2024-03-21 00:29:00:406 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-03-21 00:29:00:406 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
 2024-03-21 00:29:00:410 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+2024-03-21 01:10:32:670 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-03-21 01:10:32:719 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 17128 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-21 01:10:32:719 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-21 01:10:32:769 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-21 01:10:32:769 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-21 01:10:33:679 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21 01:10:33:770 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 7 JPA repository interfaces.
+2024-03-21 01:10:34:421 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-21 01:10:34:428 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-21 01:10:34:430 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-21 01:10:34:430 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-21 01:10:34:487 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-21 01:10:34:487 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1717 ms
+2024-03-21 01:10:34:609 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21 01:10:34:716 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.22.Final
+2024-03-21 01:10:34:721 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-03-21 01:10:35:090 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-21 01:10:35:120 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-21 01:10:35:329 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f71d804
+2024-03-21 01:10:35:332 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-21 01:10:35:358 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-21 01:10:35:360 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-21 01:10:36:861 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-21 01:10:36:865 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:10:37:415 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-21 01:10:38:147 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21 01:10:38:531 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@200d646, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a226900, org.springframework.security.web.context.SecurityContextHolderFilter@704dbac6, org.springframework.security.web.header.HeaderWriterFilter@37d7c97b, org.springframework.web.filter.CorsFilter@213362aa, org.springframework.security.web.authentication.logout.LogoutFilter@38d9217a, com.project.shopapp.filters.JwtTokenFilter@f571228, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b64a97a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@189b95ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c000f8c, org.springframework.security.web.access.ExceptionTranslationFilter@10cbef5c, org.springframework.security.web.access.intercept.AuthorizationFilter@4a41c139]
+2024-03-21 01:10:38:804 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-21 01:10:38:826 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-21 01:10:38:850 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-21 01:10:38:863 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 6.62 seconds (process running for 7.81)
+2024-03-21 01:18:29:127 [http-nio-8088-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21 01:18:29:127 [http-nio-8088-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-21 01:18:29:129 [http-nio-8088-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-03-21 01:18:29:259 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:18:29:259 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:22:35:935 [http-nio-8088-exec-3] INFO  c.p.s.controllers.UserController - New user created: UserDTO(fullName=Trần Văn Mạnh, phoneNumber=654321, address=Nhà tôi ở gốc cây đa, password=123, retypepassword=123, dateOfBirth=Wed Jun 13 07:06:40 ICT 1900, facebookAccountId=0, googleAccountId=0, roleId=1)
+2024-03-21 01:23:23:256 [http-nio-8088-exec-10] INFO  c.p.s.controllers.UserController - User login: UserLoginDTO(phoneNumber=654321, password=123)
+2024-03-21 01:23:23:425 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:24:07:488 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:24:17:324 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:24:30:573 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:24:33:326 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:24:44:116 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:25:04:590 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:25:11:677 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:25:18:999 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:25:26:708 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:25:38:510 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:25:48:816 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:25:58:054 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:25:58:057 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:26:01:417 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:26:11:936 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:26:22:263 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:26:35:284 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:26:46:301 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:26:52:252 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:26:54:592 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:27:29:813 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:27:29:814 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:27:44:339 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:27:57:695 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:28:04:297 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:28:17:449 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:28:26:442 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:28:30:702 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:28:30:704 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:28:39:466 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:28:39:466 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:29:06:001 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:29:16:511 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:29:16:512 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:29:39:098 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:29:47:515 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:29:51:333 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:29:55:402 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:30:00:848 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:30:00:855 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:30:14:871 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:30:24:241 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:30:27:162 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:30:36:198 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:30:38:351 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:30:47:350 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:30:50:266 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:31:02:098 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:31:11:563 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:32:29:903 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-21 01:33:40:705 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:34:37:400 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:34:47:557 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - Products get by: 11,12
+2024-03-21 01:35:53:306 [http-nio-8088-exec-9] INFO  c.p.s.controllers.OrderController - New order created: com.project.shopapp.models.Order@15dd34f4
+2024-03-21 01:36:04:536 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:36:11:258 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:36:17:242 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - Products get by: 10
+2024-03-21 01:36:21:342 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:36:27:068 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - Products get by: 14
+2024-03-21 01:36:29:160 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:36:43:160 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:36:58:590 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:37:08:475 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:37:33:493 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:37:40:536 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - Products get by: 11,12
+2024-03-21 01:38:11:591 [http-nio-8088-exec-10] INFO  c.p.s.controllers.OrderController - New order created: com.project.shopapp.models.Order@7f31fa18
+2024-03-21 01:38:33:713 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:41:11:205 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:41:28:912 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-21 01:41:38:583 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-21 01:41:41:759 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-21 01:41:48:892 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:41:51:027 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-21 01:42:02:930 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:42:07:535 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-21 01:42:44:837 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 1, page = 0, limit = 9
+2024-03-21 01:42:49:059 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 1, page = 27741, limit = 9
+2024-03-21 01:42:56:013 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:42:58:588 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 27741, limit = 9
+2024-03-21 01:43:07:055 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 27743, limit = 9
+2024-03-21 01:43:10:288 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 27745, limit = 9
+2024-03-21 01:43:13:903 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:43:18:166 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 27741, limit = 9
+2024-03-21 01:46:27:266 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:47:41:719 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 27741, limit = 9
+2024-03-21 01:47:44:692 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:47:47:980 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 3, page = 0, limit = 9
+2024-03-21 01:47:50:262 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 3, page = 27741, limit = 9
+2024-03-21 01:47:55:404 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:47:57:492 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 55552, limit = 9
+2024-03-21 01:48:05:252 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 55554, limit = 9
+2024-03-21 01:48:30:564 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:48:30:566 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:48:35:112 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:48:44:486 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:48:47:252 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:48:53:518 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:48:58:718 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:49:03:505 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-21 01:49:10:086 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 2, page = 0, limit = 9
+2024-03-21 01:49:12:123 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 2, page = 222326, limit = 9
+2024-03-21 01:49:25:379 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 2, page = 0, limit = 9
+2024-03-21 01:49:27:717 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 2, page = 55553, limit = 9
+2024-03-21 01:49:37:170 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:49:39:843 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-21 01:49:46:100 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 4, page = 0, limit = 9
+2024-03-21 01:49:49:742 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 4, page = 222326, limit = 9
+2024-03-21 01:49:55:773 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 4, page = 83480, limit = 9
+2024-03-21 01:50:03:817 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-21 01:50:06:630 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-21 01:51:15:294 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21 01:51:15:311 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-21 01:51:15:316 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-22 20:58:28:823 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-03-22 20:58:28:880 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 9692 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 20:58:28:881 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 20:58:28:935 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-22 20:58:28:935 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-22 20:58:30:763 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 20:58:30:884 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 7 JPA repository interfaces.
+2024-03-22 20:58:31:647 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 20:58:31:655 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 20:58:31:657 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 20:58:31:657 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 20:58:31:721 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 20:58:31:722 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2786 ms
+2024-03-22 20:58:31:880 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 20:58:31:953 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.22.Final
+2024-03-22 20:58:31:959 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-03-22 20:58:32:376 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 20:58:32:409 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-22 20:58:32:610 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53bc311f
+2024-03-22 20:58:32:613 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-22 20:58:32:642 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 20:58:32:643 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 20:58:33:824 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 20:58:33:827 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 20:58:34:351 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-22 20:58:34:885 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 20:58:35:213 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e98fa04, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4958d259, org.springframework.security.web.context.SecurityContextHolderFilter@5a164508, org.springframework.security.web.header.HeaderWriterFilter@bdacb7d, org.springframework.web.filter.CorsFilter@1782d5c8, org.springframework.security.web.authentication.logout.LogoutFilter@23800fa1, com.project.shopapp.filters.JwtTokenFilter@21bcdb53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@602a0d11, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32e4dbe0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e592e94, org.springframework.security.web.access.ExceptionTranslationFilter@67f932a4, org.springframework.security.web.access.intercept.AuthorizationFilter@2b63bfe2]
+2024-03-22 20:58:35:477 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 20:58:35:498 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-22 20:58:35:522 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 20:58:35:545 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 7.208 seconds (process running for 8.425)
+2024-03-22 20:59:34:328 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-22 20:59:34:328 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-22 20:59:34:328 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-03-22 20:59:34:394 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:01:13:816 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-22 21:01:23:150 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222325, limit = 9
+2024-03-22 21:01:25:331 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222324, limit = 9
+2024-03-22 21:01:32:047 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222323, limit = 9
+2024-03-22 21:01:34:779 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222322, limit = 9
+2024-03-22 21:01:37:997 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:01:40:530 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-22 21:01:44:698 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:02:02:258 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:08:01:421 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:08:08:415 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:08:13:334 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - Products get by: 8,12
+2024-03-22 21:08:26:710 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:08:27:310 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - Products get by: 8
+2024-03-22 21:08:30:081 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:08:32:239 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:08:35:667 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:08:39:898 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:08:40:761 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - Products get by: 11,15
+2024-03-22 21:08:44:227 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:08:44:890 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - Products get by: 15
+2024-03-22 21:08:46:905 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:08:47:590 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - Products get by: 15
+2024-03-22 21:09:59:791 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:10:03:158 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:10:06:151 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - Products get by: 11,12
+2024-03-22 21:10:08:854 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:10:09:282 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - Products get by: 11
+2024-03-22 21:10:10:283 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:10:10:719 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - Products get by: 11
+2024-03-22 21:10:12:267 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:14:49:305 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:14:52:998 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:14:56:131 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - Products get by: 9,12
+2024-03-22 21:14:57:090 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:14:58:865 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:14:59:383 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:15:00:508 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:15:04:115 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - Products get by: 9,14
+2024-03-22 21:15:05:023 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - Products get by: 14
+2024-03-22 21:15:06:150 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:15:09:623 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - Products get by: 14,15
+2024-03-22 21:15:14:198 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:15:17:313 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - Products get by: 14,15
+2024-03-22 21:15:19:530 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:15:24:999 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - Products get by: 14,15,13
+2024-03-22 21:15:49:832 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:15:51:562 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:16:03:542 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:16:07:521 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - Products get by: 14
+2024-03-22 21:16:14:833 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:16:31:533 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:16:34:785 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:16:35:388 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - Products get by: 11
+2024-03-22 21:16:35:984 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:16:39:088 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:16:41:312 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-22 21:16:51:493 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:16:55:494 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-22 21:17:04:527 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:17:08:546 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-22 21:17:11:981 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 2, limit = 9
+2024-03-22 21:17:16:030 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-22 21:17:19:816 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:17:23:014 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-22 21:17:26:613 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:17:29:422 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-22 21:17:31:823 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 2, limit = 9
+2024-03-22 21:17:35:057 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 3, limit = 9
+2024-03-22 21:17:40:357 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:17:53:062 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - Products get by: 12
+2024-03-22 21:17:54:424 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:17:58:364 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:18:01:906 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - Products get by: 12,15
+2024-03-22 21:18:03:614 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:18:06:644 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - Products get by: 12,15,10
+2024-03-22 21:18:08:894 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - Products get by: 12,15
+2024-03-22 21:18:10:813 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:18:11:422 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - Products get by: 12,15
+2024-03-22 21:18:12:219 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:18:15:624 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - Products get by: 12,15,14
+2024-03-22 21:18:17:208 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - Products get by: 12,14
+2024-03-22 21:18:17:970 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:18:18:583 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - Products get by: 12,14
+2024-03-22 21:18:45:558 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:19:01:081 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:19:04:755 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - Products get by: 11
+2024-03-22 21:20:23:795 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:20:27:753 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - Products get by: 8
+2024-03-22 21:20:47:526 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:20:51:163 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - Products get by: 11
+2024-03-22 21:21:21:453 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:21:23:853 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:22:41:648 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:22:44:820 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:23:06:661 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:23:09:327 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:24:21:562 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:24:24:023 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - Products get by: 12
+2024-03-22 21:24:33:123 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:24:43:675 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:24:47:138 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:24:49:939 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:24:52:988 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - Products get by: 11,12,14
+2024-03-22 21:24:55:674 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - Products get by: 11,12
+2024-03-22 21:24:56:504 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - Products get by: 11
+2024-03-22 21:24:57:675 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:24:58:105 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - Products get by: 11
+2024-03-22 21:24:58:781 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:25:00:492 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - Products get by: 11
+2024-03-22 21:25:01:428 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:25:05:068 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:25:08:618 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - Products get by: 11,15,14
+2024-03-22 21:25:27:004 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:25:29:453 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-22 21:25:36:135 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:25:38:598 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:25:42:045 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-22 21:25:44:630 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:25:51:602 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:25:54:679 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-22 21:26:02:128 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:26:05:515 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-22 21:26:18:140 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:26:21:103 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-22 21:26:24:420 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:26:25:727 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:26:28:926 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 222326, limit = 9
+2024-03-22 21:26:36:988 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:26:41:132 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 1, page = 0, limit = 9
+2024-03-22 21:26:43:587 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 1, page = 27741, limit = 9
+2024-03-22 21:26:46:956 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 1, page = 0, limit = 9
+2024-03-22 21:26:53:138 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 1, page = 27741, limit = 9
+2024-03-22 21:26:57:557 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 1, page = 0, limit = 9
+2024-03-22 21:27:00:884 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 5, page = 0, limit = 9
+2024-03-22 21:27:07:020 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 5, page = 1, limit = 9
+2024-03-22 21:27:08:916 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 5, page = 0, limit = 9
+2024-03-22 21:27:10:932 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:27:14:302 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-22 21:27:18:741 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:30:52:040 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-22 21:30:52:198 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:30:52:199 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 21:30:52:212 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-22 21:30:52:261 [Thread-5] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.3.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
+2024-03-22 21:30:52:285 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:30:52:307 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:30:52:370 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:30:52:433 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-22 21:30:52:446 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-22 21:30:52:900 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 9692 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:30:52:901 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:30:53:223 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:30:53:259 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 7 JPA repository interfaces.
+2024-03-22 21:30:53:423 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:30:53:423 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:30:53:424 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:30:53:424 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:30:53:449 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:30:53:450 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 548 ms
+2024-03-22 21:30:53:539 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:30:53:546 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:30:53:548 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-03-22 21:30:53:550 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7eac7a4f
+2024-03-22 21:30:53:551 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-03-22 21:30:53:551 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:30:53:551 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:30:53:727 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:30:53:728 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:30:54:027 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 21:30:54:114 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@792339bf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@499731e, org.springframework.security.web.context.SecurityContextHolderFilter@6de6bc06, org.springframework.security.web.header.HeaderWriterFilter@519bdf94, org.springframework.web.filter.CorsFilter@12b5f4d2, org.springframework.security.web.authentication.logout.LogoutFilter@fa66570, com.project.shopapp.filters.JwtTokenFilter@16da4c5e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c7ea3c3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51f93d4d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3360b8a3, org.springframework.security.web.access.ExceptionTranslationFilter@12f7fbaa, org.springframework.security.web.access.intercept.AuthorizationFilter@7e4d21d]
+2024-03-22 21:30:54:175 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 21:30:54:185 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:30:54:187 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 21:30:54:192 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 1.335 seconds (process running for 1947.072)
+2024-03-22 21:30:54:193 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-22 21:30:55:614 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-03-22 21:30:55:623 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:30:55:623 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 21:30:55:625 [Thread-7] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.3.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
+2024-03-22 21:30:55:626 [Thread-7] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-2 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.3.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.3.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
+2024-03-22 21:30:55:626 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:30:55:627 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:30:55:628 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:30:55:628 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-03-22 21:30:55:630 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-03-22 21:30:55:707 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 9692 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:30:55:707 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:30:55:823 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:30:55:845 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 7 JPA repository interfaces.
+2024-03-22 21:30:55:968 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:30:55:968 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:30:55:968 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:30:55:968 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:30:55:986 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:30:55:986 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 277 ms
+2024-03-22 21:30:56:011 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:30:56:017 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:30:56:018 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-03-22 21:30:56:020 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6aadaf1c
+2024-03-22 21:30:56:020 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-03-22 21:30:56:021 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:30:56:021 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:30:56:156 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:30:56:157 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:30:56:349 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 21:30:56:416 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a20bc52, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10dd0eef, org.springframework.security.web.context.SecurityContextHolderFilter@4dd02878, org.springframework.security.web.header.HeaderWriterFilter@309953d9, org.springframework.web.filter.CorsFilter@ae45e72, org.springframework.security.web.authentication.logout.LogoutFilter@730130c1, com.project.shopapp.filters.JwtTokenFilter@56262e2d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b0c8dc3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45a3c84c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19dd8acf, org.springframework.security.web.access.ExceptionTranslationFilter@6908f127, org.springframework.security.web.access.intercept.AuthorizationFilter@27d68f9e]
+2024-03-22 21:30:56:457 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 21:30:56:465 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:30:56:468 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 21:30:56:472 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 0.784 seconds (process running for 1949.352)
+2024-03-22 21:30:56:473 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-22 21:31:07:729 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-22 21:31:07:729 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-22 21:31:07:731 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-03-22 21:31:07:736 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:31:07:762 [http-nio-8088-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1064, SQLState: 42000
+2024-03-22 21:31:07:762 [http-nio-8088-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(0*9)' at line 1
+2024-03-22 21:31:08:815 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:31:08:818 [http-nio-8088-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1064, SQLState: 42000
+2024-03-22 21:31:08:818 [http-nio-8088-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(0*9)' at line 1
+2024-03-22 21:31:17:123 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-22 21:31:17:125 [http-nio-8088-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1064, SQLState: 42000
+2024-03-22 21:31:17:125 [http-nio-8088-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(1*9)' at line 1
+2024-03-22 21:31:18:242 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:31:18:243 [http-nio-8088-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1064, SQLState: 42000
+2024-03-22 21:31:18:243 [http-nio-8088-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(0*9)' at line 1
+2024-03-22 21:31:47:869 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-22 21:31:47:885 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:31:47:885 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 21:31:47:885 [Thread-11] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-22 21:31:47:887 [Thread-11] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.3.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
+2024-03-22 21:31:47:887 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:31:47:890 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:31:47:896 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:31:47:898 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-03-22 21:31:47:902 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-03-22 21:31:47:978 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 9692 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:31:47:978 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:31:48:123 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:31:48:148 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 7 JPA repository interfaces.
+2024-03-22 21:31:48:244 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:31:48:245 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:31:48:245 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:31:48:245 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:31:48:260 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:31:48:260 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 280 ms
+2024-03-22 21:31:48:299 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:31:48:306 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:31:48:307 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2024-03-22 21:31:48:311 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79540cd
+2024-03-22 21:31:48:311 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2024-03-22 21:31:48:312 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:31:48:312 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:31:48:472 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:31:48:472 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:31:48:660 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 21:31:48:718 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75933173, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49966fd5, org.springframework.security.web.context.SecurityContextHolderFilter@77d97189, org.springframework.security.web.header.HeaderWriterFilter@5ce8a6c6, org.springframework.web.filter.CorsFilter@5815c983, org.springframework.security.web.authentication.logout.LogoutFilter@2832817d, com.project.shopapp.filters.JwtTokenFilter@6aea70b1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@131dad37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d1cb6b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c598a44, org.springframework.security.web.access.ExceptionTranslationFilter@7fec2e77, org.springframework.security.web.access.intercept.AuthorizationFilter@3e795835]
+2024-03-22 21:31:48:753 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 21:31:48:759 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:31:48:762 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 21:31:48:765 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 0.809 seconds (process running for 2001.646)
+2024-03-22 21:31:48:766 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-22 21:32:33:996 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-22 21:32:34:005 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:32:34:005 [Thread-15] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 21:32:34:006 [Thread-15] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-4 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.3.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
+2024-03-22 21:32:34:007 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:32:34:008 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:32:34:009 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:32:34:009 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2024-03-22 21:32:34:011 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2024-03-22 21:32:34:105 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 9692 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:32:34:105 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:32:34:297 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:32:34:318 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 7 JPA repository interfaces.
+2024-03-22 21:32:34:385 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:32:34:385 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:32:34:385 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:32:34:385 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:32:34:397 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:32:34:397 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 291 ms
+2024-03-22 21:32:34:425 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:32:34:430 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:32:34:431 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2024-03-22 21:32:34:434 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38642425
+2024-03-22 21:32:34:434 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2024-03-22 21:32:34:434 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:32:34:434 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:32:34:576 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:32:34:576 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:32:34:775 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 21:32:34:829 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@36c6c5fe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d68a8cb, org.springframework.security.web.context.SecurityContextHolderFilter@21d04b99, org.springframework.security.web.header.HeaderWriterFilter@2e2750ae, org.springframework.web.filter.CorsFilter@3ad52544, org.springframework.security.web.authentication.logout.LogoutFilter@4bc216e3, com.project.shopapp.filters.JwtTokenFilter@a5f9c72, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51718ad1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c5b89f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6de51024, org.springframework.security.web.access.ExceptionTranslationFilter@35731e90, org.springframework.security.web.access.intercept.AuthorizationFilter@360c2d6f]
+2024-03-22 21:32:34:865 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 21:32:34:873 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:32:34:876 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 21:32:34:879 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 0.795 seconds (process running for 2047.761)
+2024-03-22 21:32:34:880 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-22 21:32:45:495 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-22 21:32:45:506 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:32:45:507 [Thread-19] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 21:32:45:509 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-5 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.3.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
+2024-03-22 21:32:45:509 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:32:45:510 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:32:45:512 [Thread-19] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:32:45:512 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2024-03-22 21:32:45:514 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2024-03-22 21:32:45:605 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 9692 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:32:45:605 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:32:45:843 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:32:45:867 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 6 JPA repository interfaces.
+2024-03-22 21:32:45:960 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:32:45:960 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:32:45:961 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:32:45:961 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:32:45:979 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:32:45:979 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 371 ms
+2024-03-22 21:32:46:011 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:32:46:017 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:32:46:017 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2024-03-22 21:32:46:020 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68d3f8bf
+2024-03-22 21:32:46:020 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2024-03-22 21:32:46:022 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:32:46:022 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:32:46:170 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:32:46:170 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:32:46:253 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [E:\shopapp\shopapp-backend\shopapp\target\classes\com\project\shopapp\controllers\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'orderService': Resolution of declared constructors on bean Class [com.project.shopapp.services.OrderService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1ba63116] failed
+2024-03-22 21:32:46:253 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:32:46:254 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2024-03-22 21:32:46:270 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2024-03-22 21:32:46:271 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 21:32:46:280 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-22 21:32:46:312 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [E:\shopapp\shopapp-backend\shopapp\target\classes\com\project\shopapp\controllers\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'orderService': Resolution of declared constructors on bean Class [com.project.shopapp.services.OrderService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1ba63116] failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:236)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1350)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:558)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:518)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.project.shopapp.ShopappApplication.main(ShopappApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderService': Resolution of declared constructors on bean Class [com.project.shopapp.services.OrderService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1ba63116] failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:558)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:518)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:906)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:784)
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/project/shopapp/repositories/ProductRepository
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367)
+	... 37 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.project.shopapp.repositories.ProductRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 41 common frames omitted
+2024-03-22 21:32:47:771 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 9692 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:32:47:771 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:32:47:927 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:32:47:944 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 7 JPA repository interfaces.
+2024-03-22 21:32:48:045 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:32:48:047 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:32:48:048 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:32:48:048 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:32:48:068 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:32:48:068 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 296 ms
+2024-03-22 21:32:48:101 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:32:48:106 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:32:48:107 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2024-03-22 21:32:48:109 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1edbf0fb
+2024-03-22 21:32:48:109 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2024-03-22 21:32:48:109 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:32:48:109 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:32:48:222 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:32:48:222 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:32:48:452 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 21:32:48:491 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23d27418, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@257a12a7, org.springframework.security.web.context.SecurityContextHolderFilter@16ff663e, org.springframework.security.web.header.HeaderWriterFilter@2cfcd1d9, org.springframework.web.filter.CorsFilter@6b346ffd, org.springframework.security.web.authentication.logout.LogoutFilter@560a0489, com.project.shopapp.filters.JwtTokenFilter@99c9a02, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5395e5f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71112eb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a028bf8, org.springframework.security.web.access.ExceptionTranslationFilter@471cb75a, org.springframework.security.web.access.intercept.AuthorizationFilter@52d076fd]
+2024-03-22 21:32:48:523 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 21:32:48:529 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:32:48:532 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 21:32:48:535 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 0.785 seconds (process running for 2061.416)
+2024-03-22 21:32:48:536 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-22 21:34:00:267 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-22 21:34:00:277 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:34:00:277 [Thread-23] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 21:34:00:279 [Thread-23] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-7 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.3.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
+2024-03-22 21:34:00:279 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:34:00:280 [Thread-23] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:34:00:281 [Thread-23] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:34:00:282 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2024-03-22 21:34:00:283 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2024-03-22 21:34:00:365 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 9692 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:34:00:365 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:34:00:484 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:34:00:503 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 7 JPA repository interfaces.
+2024-03-22 21:34:00:594 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:34:00:595 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:34:00:595 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:34:00:595 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:34:00:608 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:34:00:608 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 241 ms
+2024-03-22 21:34:00:630 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:34:00:635 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:34:00:636 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2024-03-22 21:34:00:639 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e0cf508
+2024-03-22 21:34:00:639 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2024-03-22 21:34:00:639 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:34:00:639 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:34:00:750 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:34:00:750 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:34:00:974 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 21:34:01:027 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7289d2c9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8f42ada, org.springframework.security.web.context.SecurityContextHolderFilter@6bf51f7a, org.springframework.security.web.header.HeaderWriterFilter@180dad, org.springframework.web.filter.CorsFilter@571d3c36, org.springframework.security.web.authentication.logout.LogoutFilter@294a69b3, com.project.shopapp.filters.JwtTokenFilter@7c2cc5d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e61bc1d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a32a0d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d256aaf, org.springframework.security.web.access.ExceptionTranslationFilter@3be5f455, org.springframework.security.web.access.intercept.AuthorizationFilter@2573ee34]
+2024-03-22 21:34:01:062 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 21:34:01:069 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:34:01:072 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 21:34:01:075 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 0.736 seconds (process running for 2133.956)
+2024-03-22 21:34:01:076 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-22 21:34:47:326 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-22 21:34:47:338 [Thread-30] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:34:47:339 [Thread-30] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 21:34:47:340 [Thread-30] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-8 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.3.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
+2024-03-22 21:34:47:351 [Thread-30] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:34:47:353 [Thread-30] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:34:47:356 [Thread-30] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:34:47:356 [Thread-30] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2024-03-22 21:34:47:359 [Thread-30] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2024-03-22 21:34:47:448 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 9692 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:34:47:448 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:34:47:682 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:34:47:707 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 7 JPA repository interfaces.
+2024-03-22 21:34:47:825 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:34:47:825 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:34:47:825 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:34:47:825 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:34:47:853 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:34:47:853 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 403 ms
+2024-03-22 21:34:47:901 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:34:47:910 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:34:47:911 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+2024-03-22 21:34:47:914 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@401adaed
+2024-03-22 21:34:47:915 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+2024-03-22 21:34:47:915 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:34:47:915 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:34:48:054 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:34:48:054 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:34:48:247 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 21:34:48:308 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@650f19bd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c81fa13, org.springframework.security.web.context.SecurityContextHolderFilter@3f78d8ae, org.springframework.security.web.header.HeaderWriterFilter@716f5e2f, org.springframework.web.filter.CorsFilter@728bf730, org.springframework.security.web.authentication.logout.LogoutFilter@7dc68037, com.project.shopapp.filters.JwtTokenFilter@4019446b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@530db0c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f973c5a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e6fddb, org.springframework.security.web.access.ExceptionTranslationFilter@6007882b, org.springframework.security.web.access.intercept.AuthorizationFilter@75303537]
+2024-03-22 21:34:48:356 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 21:34:48:362 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:34:48:365 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 21:34:48:370 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 0.943 seconds (process running for 2181.25)
+2024-03-22 21:34:48:371 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-22 21:36:06:147 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-22 21:36:06:156 [Thread-34] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:36:06:156 [Thread-34] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 21:36:06:158 [Thread-34] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-9 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.3.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
+2024-03-22 21:36:06:158 [Thread-34] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:36:06:159 [Thread-34] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:36:06:160 [Thread-34] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:36:06:160 [Thread-34] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2024-03-22 21:36:06:162 [Thread-34] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+2024-03-22 21:36:06:254 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 9692 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:36:06:254 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:36:06:377 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:36:06:396 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 7 JPA repository interfaces.
+2024-03-22 21:36:06:496 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:36:06:497 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:36:06:497 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:36:06:497 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:36:06:513 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:36:06:515 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 260 ms
+2024-03-22 21:36:06:545 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:36:06:550 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:36:06:551 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+2024-03-22 21:36:06:554 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a294614
+2024-03-22 21:36:06:554 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+2024-03-22 21:36:06:556 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:36:06:556 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:36:06:686 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:36:06:686 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:36:06:880 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 21:36:06:934 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@665fc610, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33958e2d, org.springframework.security.web.context.SecurityContextHolderFilter@77655fd1, org.springframework.security.web.header.HeaderWriterFilter@17dfb857, org.springframework.web.filter.CorsFilter@3f2be4ab, org.springframework.security.web.authentication.logout.LogoutFilter@6006b32d, com.project.shopapp.filters.JwtTokenFilter@4a899da5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55703ca3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57b7ef32, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e5008f0, org.springframework.security.web.access.ExceptionTranslationFilter@22e40423, org.springframework.security.web.access.intercept.AuthorizationFilter@5c61a96f]
+2024-03-22 21:36:06:966 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 21:36:06:972 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:36:06:975 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 21:36:06:978 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 0.743 seconds (process running for 2259.859)
+2024-03-22 21:36:06:979 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-22 21:37:06:582 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:37:06:582 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+2024-03-22 21:37:06:583 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+2024-03-22 21:37:12:847 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-03-22 21:37:12:894 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 6984 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:37:12:895 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:37:12:943 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-22 21:37:12:943 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-22 21:37:13:626 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:37:13:707 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 7 JPA repository interfaces.
+2024-03-22 21:37:14:266 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:37:14:281 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:37:14:283 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:37:14:283 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:37:14:340 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:37:14:341 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1397 ms
+2024-03-22 21:37:14:473 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:37:14:553 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.22.Final
+2024-03-22 21:37:14:556 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-03-22 21:37:14:909 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:37:14:939 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-03-22 21:37:15:097 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cc33da9
+2024-03-22 21:37:15:099 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-03-22 21:37:15:130 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:37:15:131 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:37:16:128 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:37:16:130 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:37:16:576 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-22 21:37:17:127 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 21:37:17:377 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@29ce1219, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77240c91, org.springframework.security.web.context.SecurityContextHolderFilter@270e5c2c, org.springframework.security.web.header.HeaderWriterFilter@2eacf81a, org.springframework.web.filter.CorsFilter@d726d06, org.springframework.security.web.authentication.logout.LogoutFilter@5bef9f1a, com.project.shopapp.filters.JwtTokenFilter@62c3b235, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f89c2c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2edbc1ec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@467b64cc, org.springframework.security.web.access.ExceptionTranslationFilter@766a6c71, org.springframework.security.web.access.intercept.AuthorizationFilter@76fe9b5b]
+2024-03-22 21:37:17:552 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 21:37:17:566 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:37:17:580 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 21:37:17:590 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 5.135 seconds (process running for 6.262)
+2024-03-22 21:37:58:382 [http-nio-8088-exec-8] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-22 21:37:58:382 [http-nio-8088-exec-8] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-22 21:37:58:383 [http-nio-8088-exec-8] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-22 21:37:58:466 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:37:58:551 [http-nio-8088-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1064, SQLState: 42000
+2024-03-22 21:37:58:552 [http-nio-8088-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(0)' at line 1
+2024-03-22 21:37:59:774 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:37:59:778 [http-nio-8088-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1064, SQLState: 42000
+2024-03-22 21:37:59:778 [http-nio-8088-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(0)' at line 1
+2024-03-22 21:38:49:798 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-03-22 21:38:49:811 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:38:49:811 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 21:38:49:812 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-22 21:38:49:816 [Thread-5] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.3.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
+2024-03-22 21:38:49:817 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:38:49:819 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:38:49:824 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:38:49:827 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-03-22 21:38:49:837 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-03-22 21:38:49:911 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 6984 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:38:49:912 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:38:50:156 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:38:50:181 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 6 JPA repository interfaces.
+2024-03-22 21:38:50:331 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:38:50:331 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:38:50:332 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:38:50:332 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:38:50:355 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:38:50:356 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 442 ms
+2024-03-22 21:38:50:436 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:38:50:446 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:38:50:447 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-03-22 21:38:50:453 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c22df3c
+2024-03-22 21:38:50:453 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-03-22 21:38:50:454 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:38:50:454 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:38:50:656 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:38:50:657 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:38:50:802 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [E:\shopapp\shopapp-backend\shopapp\target\classes\com\project\shopapp\controllers\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'orderService' defined in file [E:\shopapp\shopapp-backend\shopapp\target\classes\com\project\shopapp\services\OrderService.class]: Unsatisfied dependency expressed through constructor parameter 2: No qualifying bean of type 'com.project.shopapp.repositories.ProductRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-03-22 21:38:50:802 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:38:50:802 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-03-22 21:38:50:805 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-03-22 21:38:50:805 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 21:38:50:811 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-22 21:38:50:831 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.project.shopapp.services.OrderService required a bean of type 'com.project.shopapp.repositories.ProductRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.project.shopapp.repositories.ProductRepository' in your configuration.
+
+2024-03-22 21:38:52:316 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 6984 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:38:52:316 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:38:52:439 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:38:52:453 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 7 JPA repository interfaces.
+2024-03-22 21:38:52:532 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:38:52:533 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:38:52:533 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:38:52:534 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:38:52:557 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:38:52:557 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 240 ms
+2024-03-22 21:38:52:592 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:38:52:609 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:38:52:610 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-03-22 21:38:52:614 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66909816
+2024-03-22 21:38:52:614 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-03-22 21:38:52:615 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:38:52:615 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:38:52:737 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:38:52:737 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:38:52:982 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 21:38:53:037 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a56132d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4970c6b1, org.springframework.security.web.context.SecurityContextHolderFilter@1bc99e2, org.springframework.security.web.header.HeaderWriterFilter@1909dd72, org.springframework.web.filter.CorsFilter@3008e635, org.springframework.security.web.authentication.logout.LogoutFilter@13aa09e7, com.project.shopapp.filters.JwtTokenFilter@7c582a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c15e3bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21095645, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2494937e, org.springframework.security.web.access.ExceptionTranslationFilter@bdcd5a1, org.springframework.security.web.access.intercept.AuthorizationFilter@1b91f331]
+2024-03-22 21:38:53:071 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 21:38:53:078 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:38:53:081 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 21:38:53:085 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 0.792 seconds (process running for 101.757)
+2024-03-22 21:38:53:087 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-22 21:38:59:641 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-22 21:38:59:642 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-22 21:38:59:642 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-03-22 21:38:59:647 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:39:04:124 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 1, limit = 9
+2024-03-22 21:39:09:069 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:39:11:752 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 3, limit = 9
+2024-03-22 21:39:21:645 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:39:24:570 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:39:43:984 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:43:31:594 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:43:34:054 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:43:37:364 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:37:373 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:37:379 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:37:387 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:45:351 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:43:53:585 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-22 21:43:53:597 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:43:53:598 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-03-22 21:43:53:598 [Thread-7] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-03-22 21:43:53:600 [Thread-7] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.3.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.3.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.3.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.3.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.3.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.3.1/java.lang.Thread.run(Thread.java:833)
+2024-03-22 21:43:53:601 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:43:53:602 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:43:53:604 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:43:53:604 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-03-22 21:43:53:606 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-03-22 21:43:53:743 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.3.1 with PID 6984 (E:\shopapp\shopapp-backend\shopapp\target\classes started by Asus VivoBook in E:\shopapp\shopapp-backend\shopapp)
+2024-03-22 21:43:53:744 [restartedMain] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2024-03-22 21:43:54:093 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-22 21:43:54:120 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 7 JPA repository interfaces.
+2024-03-22 21:43:54:263 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 21:43:54:263 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:43:54:264 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-22 21:43:54:264 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-22 21:43:54:290 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-22 21:43:54:290 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 542 ms
+2024-03-22 21:43:54:388 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-22 21:43:54:403 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-22 21:43:54:405 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2024-03-22 21:43:54:415 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bff5b90
+2024-03-22 21:43:54:415 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2024-03-22 21:43:54:416 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-22 21:43:54:416 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-03-22 21:43:54:627 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-22 21:43:54:627 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:43:55:281 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-22 21:43:55:396 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@646852c3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@273b5423, org.springframework.security.web.context.SecurityContextHolderFilter@b8f4c87, org.springframework.security.web.header.HeaderWriterFilter@cb98256, org.springframework.web.filter.CorsFilter@5b1e8d91, org.springframework.security.web.authentication.logout.LogoutFilter@468bdd8d, com.project.shopapp.filters.JwtTokenFilter@7118d0ad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f59954a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34caf52f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41b30f32, org.springframework.security.web.access.ExceptionTranslationFilter@2c22f147, org.springframework.security.web.access.intercept.AuthorizationFilter@18405eee]
+2024-03-22 21:43:55:472 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-03-22 21:43:55:485 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-03-22 21:43:55:489 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 21:43:55:495 [restartedMain] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 1.803 seconds (process running for 404.168)
+2024-03-22 21:43:55:498 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-03-22 21:43:55:568 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-22 21:43:55:568 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-03-22 21:43:55:569 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-03-22 21:43:55:582 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:55:596 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:55:603 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:55:610 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:55:618 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:55:739 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:43:56:239 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:56:245 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:56:252 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:56:258 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:56:266 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:56:273 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:57:322 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:43:59:442 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:59:449 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:59:455 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:59:460 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:59:466 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:59:472 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:43:59:478 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:44:00:780 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:44:04:816 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - Products get by: 9,15
+2024-03-22 21:44:04:822 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - Products get by: 9,15
+2024-03-22 21:44:04:828 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - Products get by: 9,15
+2024-03-22 21:44:04:835 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - Products get by: 9,15
+2024-03-22 21:44:04:842 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - Products get by: 9,15
+2024-03-22 21:44:04:849 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - Products get by: 9,15
+2024-03-22 21:44:04:854 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - Products get by: 9,15
+2024-03-22 21:44:04:861 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - Products get by: 9,15
+2024-03-22 21:44:06:732 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:44:07:562 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:44:08:049 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:44:08:055 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:44:08:063 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:44:08:070 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:44:08:076 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:44:08:093 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:44:08:101 [http-nio-8088-exec-9] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:44:08:106 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:44:08:114 [http-nio-8088-exec-10] INFO  c.p.s.controllers.ProductController - Products get by: 9
+2024-03-22 21:44:11:925 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - keyword = , category_id = 0, page = 0, limit = 9
+2024-03-22 21:45:30:926 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-22 21:45:30:927 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2024-03-22 21:45:30:929 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.

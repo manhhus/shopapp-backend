@@ -84,7 +84,7 @@ public class ProductService implements IProductService{
     @Override
     public List<ProductResponse> getAllProducts(String keyword, Long categoryId, int limit, int page) {
         List<ProductResponse> productResponseList = new ArrayList<>();
-        List<Product> productPage = productRepository.searchProducts(keyword, categoryId, limit,page);
+        List<Product> productPage = productRepository.searchProducts(keyword, categoryId, limit, page*limit);
         for (Product productResponse: productPage) {
             productResponseList.add(ProductResponse.fromProduct(productResponse));
         }

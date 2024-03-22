@@ -19,13 +19,13 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
             value = "SELECT * FROM products p " +
                     "WHERE (:categoryId is null or :categoryId = 0 or p.category_id = :categoryId) " +
                     "and (:keyword is null or :keyword = '' or p.name like %:keyword% ) " +
-                    "LIMIT :limit OFFSET :page",
+                    "LIMIT :limit OFFSET :offset",
             nativeQuery = true
     )
     List<Product> searchProducts(@Param("keyword") String keyword,
                                  @Param("categoryId") Long categoryId,
                                  @Param("limit") int limit,
-                                 @Param("page") int page);
+                                 @Param("offset") int offset);
 
     @Query(value = "SELECT CEIL(COUNT(*) / :limit) FROM products", nativeQuery = true)
     int getTotalPage(@Param("limit") int limit);
