@@ -7,6 +7,7 @@ import com.project.shopapp.responses.OrderResponse;
 import com.project.shopapp.services.IOrderService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.aspectj.weaver.ast.Or;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -40,6 +41,16 @@ public class OrderController {
             logger.info("New order created: {}", order);
             return ResponseEntity.ok(order);
         } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @PostMapping("paid/{order_id}")
+    public ResponseEntity<?> checkPay(@PathVariable("order_id") Long orderId) {
+        try {
+            OrderResponse orderResponse = OrderResponse.fromOrder(orderService.updatePayOrder(orderId));
+            return ResponseEntity.ok(orderResponse);
+        }catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }

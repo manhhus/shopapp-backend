@@ -51,6 +51,7 @@ public class OrderService implements IOrderService{
         order.setShippingDate(shippingDate);
         order.setActive(true);
         order.setTotalMoney(orderDTO.getTotalMoney());
+        order.setPay("unpaid");
         orderRepository.save(order);
         List<OrderDetail> orderDetails = new ArrayList<>();
         for(CartItemDTO cartItemDTO: orderDTO.getCartItems()) {
@@ -73,7 +74,14 @@ public class OrderService implements IOrderService{
     public Order getOrder(Long id) {
         return orderRepository.findById(id).orElse(null);
     }
-
+    @Override
+    @Transactional
+    public Order updatePayOrder(Long orderId) throws DataNotFoundException{
+        Order order = orderRepository.findById(orderId).orElseThrow(() ->
+                new DataNotFoundException("Cannot find order with id: " + orderId));
+        order.setPay("paid");
+        return orderRepository.save(order);
+    }
     @Override
     @Transactional
     public Order updateOrder(Long id, OrderDTO orderDTO)

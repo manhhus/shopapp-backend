@@ -70,4 +70,6 @@ public class Order {
     @JsonManagedReference
     private List<OrderDetail> orderDetails;
 
+    @Column(name = "pay")
+    private String pay;
 }

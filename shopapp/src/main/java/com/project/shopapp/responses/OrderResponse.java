@@ -63,6 +63,8 @@ public class OrderResponse {
     @JsonProperty("order_details")
     private List<OrderDetail> orderDetails;
 
+    @JsonProperty("pay")
+    private String pay;
     public static OrderResponse fromOrder(Order order) {
         return OrderResponse.builder()
                 .id(order.getId())
@@ -80,6 +82,7 @@ public class OrderResponse {
                 .orderDate(order.getOrderDate())
                 .totalMoney(order.getTotalMoney())
                 .orderDetails(order.getOrderDetails())
+                .pay(order.getPay())
                 .build();
     }
 }

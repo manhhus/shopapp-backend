@@ -91,7 +91,8 @@ public class WebSecurityConfig {
 
                             .requestMatchers(DELETE,
                                     String.format("%s/order_details/**", apiPrefix)).hasRole(Role.ADMIN)
-
+                            .requestMatchers(GET,
+                                    String.format("%s/payment/**", apiPrefix)).hasAnyRole(Role.USER, Role.ADMIN)
                             .anyRequest().authenticated();
 
                 })
