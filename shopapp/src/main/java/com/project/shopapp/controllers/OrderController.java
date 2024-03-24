@@ -49,6 +49,7 @@ public class OrderController {
     public ResponseEntity<?> checkPay(@PathVariable("order_id") Long orderId) {
         try {
             OrderResponse orderResponse = OrderResponse.fromOrder(orderService.updatePayOrder(orderId));
+            logger.info("update order paid: {}", orderId);
             return ResponseEntity.ok(orderResponse);
         }catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
