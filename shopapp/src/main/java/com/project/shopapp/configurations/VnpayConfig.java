@@ -17,7 +17,7 @@ import jakarta.servlet.http.HttpServletRequest;
 
 
 
-public class Config {
+public class VnpayConfig {
     public static String vnp_PayUrl = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
     public static String vnp_TmnCode = "FRUO4TDR";
     public static String secretKey = "QBBSHAIZZWWHJXIZMMXXGPWKCWMCCTPF";

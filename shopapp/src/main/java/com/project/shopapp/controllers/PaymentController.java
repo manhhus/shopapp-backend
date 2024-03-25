@@ -1,7 +1,7 @@
 package com.project.shopapp.controllers;
 
 
-import com.project.shopapp.configurations.Config;
+import com.project.shopapp.configurations.VnpayConfig;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
@@ -35,10 +35,10 @@ public class PaymentController {
         long amount = (long) (totalMoneyFloat * 100);
         String bankCode = "NCB";
 
-        String vnp_TxnRef = Config.getRandomNumber(8);
+        String vnp_TxnRef = VnpayConfig.getRandomNumber(8);
         String vnp_IpAddr = "127.0.0.1";
 
-        String vnp_TmnCode = Config.vnp_TmnCode;
+        String vnp_TmnCode = VnpayConfig.vnp_TmnCode;
 
         Map<String, String> vnp_Params = new HashMap<>();
         vnp_Params.put("vnp_Version", vnp_Version);
@@ -89,9 +89,9 @@ public class PaymentController {
             }
         }
         String queryUrl = query.toString();
-        String vnp_SecureHash = Config.hmacSHA512(Config.secretKey, hashData.toString());
+        String vnp_SecureHash = VnpayConfig.hmacSHA512(VnpayConfig.secretKey, hashData.toString());
         queryUrl += "&vnp_SecureHash=" + vnp_SecureHash;
-        String paymentUrl = Config.vnp_PayUrl + "?" + queryUrl;
+        String paymentUrl = VnpayConfig.vnp_PayUrl + "?" + queryUrl;
 
         return paymentUrl;
     }
