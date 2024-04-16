@@ -1,13 +1,9 @@
 package com.project.shopapp.models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.project.shopapp.services.ProductService;
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
 
 import java.util.List;
 @Entity
@@ -17,6 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@EntityListeners(ProductListener.class)
 public class Product extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
